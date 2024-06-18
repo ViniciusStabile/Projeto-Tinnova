@@ -11,19 +11,19 @@ public class Product {
 
 	}
 
-	public String getname() {
+	public String getName() {
 		return name;
 	}
 
-	public void setname(String name) {
+	public void setName(String name) {
 		this.name = name;
 	}
 
-	public int getquantity() {
+	public int getQuantity() {
 		return quantity;
 	}
 
-	public void setquantity(int quantity) {
+	public void setQuantity(int quantity) {
 		this.quantity = quantity;
 	}
 	
