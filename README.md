@@ -24,5 +24,5 @@ O projeto está organizado em três pacotes principais:
 3. Compile o projeto usando um ambiente de desenvolvimento Java (JDK).
 4. Execute a classe `Program` para iniciar o programa.
 
-git clone git@github.com:ViniciusStabile/Projeto-Tinnova.git
+git clone git@github.com:ViniciusStabile/Projeto-Tinnova.git](https://github.com/ViniciusStabile/Projeto-Tinnova.git
 
