@@ -5,15 +5,15 @@ import java.util.ArrayList;
 import Entities.Product;
 
 public class InventoryManager {
-	private ArrayList<Product> inventario;
+	private ArrayList<Product> inventory;
 
 	public InventoryManager() {
-		this.inventario = new ArrayList<>();
+		this.inventory = new ArrayList<>();
 	}
 
-	public void adicionarProduct(String name, int quantity) {
+	public void addProduct(String name, int quantity) {
 
-		for (Product p : inventario) {
+		for (Product p : inventory) {
 			if (p.getName().equals(name)) {
 
 				p.setQuantity(p.getQuantity() + quantity);
@@ -22,15 +22,15 @@ public class InventoryManager {
 			}
 		}
 
-		Product novoProduct = new Product(name, quantity);
-		inventario.add(novoProduct);
+		Product newProduct = new Product(name, quantity);
+		inventory.add(newProduct);
 		System.out.println("Produto adicionado ao inventário: " + name);
 	}
 
-	public void removerProduct(String name) {
-		for (Product p : inventario) {
+	public void removeProduct(String name) {
+		for (Product p : inventory) {
 			if (p.getName().equals(name)) {
-				inventario.remove(p);
+				inventory.remove(p);
 				System.out.println("Produto removido do inventário: " + name);
 				return;
 			}
@@ -38,15 +38,15 @@ public class InventoryManager {
 		System.out.println("Produto não encontrado: " + name);
 	}
 
-	public void listarProducts() {
+	public void listProducts() {
 		System.out.println("Produtos no inventário:");
-		for (Product p : inventario) {
-			System.out.println("Nome: " + p.getName() + ", Quantity: " + p.getQuantity());
+		for (Product p : inventory) {
+			System.out.println("Nome: " + p.getName() + ", Quantidade: " + p.getQuantity());
 		}
 	}
 
-	public void buscarProduct(String name) {
-		for (Product p : inventario) {
+	public void searchProduct(String name) {
+		for (Product p : inventory) {
 			if (p.getName().equals(name)) {
 				System.out.println("Produto encontrado:");
 				System.out.println("Nome: " + p.getName() + ", Quantidade: " + p.getQuantity());
